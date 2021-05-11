@@ -16,8 +16,29 @@ header {
 }
 header h1 {
     font-weight: bold;
-    display: inline;
+    display: flex;
     margin: 0;
     font-size: 40px;
     color: rgb(104, 102, 102);
+    background-color: rgb(104, 160, 182);
+    text
+}
+header a {
+    text-decoration: none;
+}
+/* stlye nav bar to the right side of page*/
+header nav {
+    float: right;
+    margin: 5px 0;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: normal;
+    font-size: 25px;
+    font-weight: bold;
+    font-style:inherit;
+    color: rgba(0, 0, 0, .5);
 }
