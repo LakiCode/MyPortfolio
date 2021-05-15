@@ -39,15 +39,44 @@ header nav ul li {
   
 }
 header nav ul li a {
-    margin: 0 30px;
+    margin: 0 5px;
     font-weight: lighter;
+    padding: 5px 10px;
     font-size: 22px;
     font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
     color:rgb(145, 204, 205);
+    border-bottom: 4px solid;
+    
+    padding
+    
     
 }
 /** start hero style **/
-
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* SECTION About Me STYLES START */
+.me {
+    font-size: 55px;
+    display: inline-block;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    margin-bottom: 35px;
+    color: #024e76;
+  }
+  
+  .primary-border {
+    border-color: #fce138;
+  }
+  
+  .secondary-border {
+    border-color: #39a6b2;
+  }
+  /* SECTION TITLE STYLES END */
 /** end of hero style **/
 /* Header and nav bar style part */
 /*
