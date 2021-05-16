@@ -1,13 +1,22 @@
+:root {
+    --hf-color: #232626;
+    --bg-color: rgb(237, 237, 246);
+    --box-color: rgb(145, 204, 205);
+}
+
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
   }
+
 /* body */
 body {
-    background-color: rgb(237, 237, 246);
+    background-color: var(--bg-color);
     font-family: Arial, Helvetica, sans-serif;
 }
+/** HEADER and MENU STYLE START **/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -15,24 +24,28 @@ header {
     background-color: rgb(49, 52, 61);
     flex-wrap: wrap;
 }
-/** header h1 style **/
+/**header h1 style */
 header h1 {
     font-weight: bold;
     font-size: 36px;
     font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
     color:#232626;
-    margin: 0;  
+    margin: 0;
 }
-/** header links style **/
+header span {
+    background-color: var(--box-color);
+    width: 50%;
+}
+/* header links style */
 header a {
     text-decoration: none;
-    color: #8a0a0ad7;
 }
-/** nav bar style **/
+
+/* nav bar style */
 header nav {
     margin: 7px 0;
 }
-header nav ul {
+header nav ul, .contact-nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -41,17 +54,21 @@ header nav ul {
   
 }
 header nav ul li a {
-    justify-content: flex-end;
     margin: 0 5px;
     font-weight: lighter;
     padding: 5px 10px;
-    font-size: 22px;
+    font-size: 1.55vw;
     font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
     color:rgb(145, 204, 205);
     border-bottom: 4px solid;
 }
+header nav ul li a:hover {
+    color: rgb(255, 0, 0);
+}
 /** start hero style **/
 .hero {
+    display: flex;
+    flex-wrap: wrap;
     background-image: url("../images/hero-bg.jpg");
     height: 100px;
     background-position: center;
@@ -59,20 +76,20 @@ header nav ul li a {
     position: relative;
 }
 /* SECTION STYLES START */
-.main-part {
-    
-    margin: 0 auto 30px auto;
-    color:#224380;
-    overflow: auto;
-  }
-.left-title {
+.my-title {
     width: 30%;
-    float:left;
     font-size: 50px;
     padding: 0 5px 20px 100px;
     margin: 25px 0px 15px 15px;
     font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
     color:#224380;
+}
+
+/* Start About-me style */
+.abautme {
+    margin: 0 auto 30px auto;
+    color:#224380;
+    overflow: auto;
   }
   .right-content {
       margin: 15px 5px 20px;
@@ -81,7 +98,24 @@ header nav ul li a {
       width: 65%;
       border-left: 4px solid;
   }
+  
+  /* end of about-me style */
+  
+  /* start my-work style */
 
+  /* end my-work style */
+
+  /* start contact-me style */
+
+.contact-nav a {
+    margin: 0 5px;
+    font-weight: lighter;
+    padding: 5px 10px;
+    font-size: 1.55vw;
+    font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
+    color:rgb(145, 204, 205);
+    border-bottom: 4px solid;
+}
   .right-content p {
       margin:  0 auto;
   }
@@ -95,64 +129,44 @@ header nav ul li a {
 
   /* footer style */
   footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: rgb(49, 52, 61);
     width: 100%;
     padding: 20px 15px;
 }
 footer h2 {
-    display: inline;
+  
     color:  #01b9a8;
     font-size: 22px;
     margin: 0;
 }
 footer div {
-    float: right;
+   
     line-height: 1.5;
     text-align: right;
     
 }
-  /* SECTION TITLE STYLES END */
-/** end of hero style **/
-/* Header and nav bar style part */
-/*
-header {
-    padding: 20px 30px;
-    background-color: rgba(0, 0, 0, 0.487);
-}
-header h1 {
-    font-weight: bold;
+/* UTTILS */
+.row {
     display: flex;
-    margin: 0;
-    font-size: 40px;
-    color: rgb(104, 102, 102);
-    background-color: rgb(104, 160, 182);
-    
-}
-header a {
-    text-decoration: none;
-}
-*/
-/* stlye nav bar to the right side of page*/
-/*
-header nav {
-     margin: 5px 0;
-}
-header nav ul {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.first-column {
+    background-color:rgb(255, 0, 0) ;
+    height: 100px;
 }
 
-header nav ul li {
-    display: inline;
+.second-column {
+    background-color:rgb(49, 0, 128) ;
+    height: 100px;
 }
-header nav ul li a {
-    margin: 0 30px;
-    font-weight: normal;
-    font-size: 1.74vw;
-    font-weight: bold;
-    font-style:inherit;
-    color: rgba(0, 0, 0, .5);
-}
-*/
