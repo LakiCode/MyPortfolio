@@ -46,10 +46,6 @@ header nav ul li a {
     font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
     color:rgb(145, 204, 205);
     border-bottom: 4px solid;
-    
-    padding
-    
-    
 }
 /** start hero style **/
 .hero {
@@ -59,17 +55,31 @@ header nav ul li a {
     background-size: cover;
     position: relative;
 }
-/* SECTION About Me STYLES START */
+/* SECTION STYLES START */
+.main-part {
+    
+    margin: 0 auto 30px auto;
+    color:#224380;
+    overflow: auto;
+  }
 .left-title {
+    width: 30%;
+    float:left;
     font-size: 50px;
-    display: inline-block;
     padding: 0 5px 20px 100px;
-    border-right: 4px solid;
     margin: 25px 0px 15px 15px;
     font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
     color:#224380;
   }
-  .me p {
+  .right-content {
+      margin: 15px 5px 20px;
+      padding: 5px 50px;
+      float:right;
+      width: 65%;
+      border-left: 4px solid;
+  }
+
+  .right-content p {
       margin:  0 auto;
   }
   .primary-border {
@@ -79,6 +89,25 @@ header nav ul li a {
   .secondary-border {
     border-color: #39a6b2;
   }
+
+  /* footer style */
+  footer {
+    background-color: rgb(49, 52, 61);
+    width: 100%;
+    padding: 20px 15px;
+}
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+    
+}
   /* SECTION TITLE STYLES END */
 /** end of hero style **/
 /* Header and nav bar style part */
