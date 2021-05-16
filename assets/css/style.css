@@ -2,6 +2,7 @@
     --hf-color: #232626;
     --bg-color: rgb(237, 237, 246);
     --box-color: rgb(145, 204, 205);
+    --p-text-color: rgb(80, 154, 155);
 }
 
 * {
@@ -86,7 +87,7 @@ header nav ul li a:hover {
 }
 
 /* Start About-me style */
-.abautme {
+.about-me {
     margin: 0 auto 30px auto;
     color:#224380;
     overflow: auto;
@@ -98,7 +99,16 @@ header nav ul li a:hover {
       width: 65%;
       border-left: 4px solid;
   }
-  
+  .about-me p {
+            color: var(--p-text-color);
+            line-height: 1.5;
+            width: 80%;
+            margin: 0 auto;
+            font-size: 16px;
+            text-align: left;
+      
+  }
+
   /* end of about-me style */
   
   /* start my-work style */
