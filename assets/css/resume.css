@@ -62,16 +62,30 @@
     /** start hero style **/
     .hero {
         display: flex;
-        flex-wrap: wrap;
-        background-image: url("../images/hero-bg.jpg");
+        text-align: center;
+         background-image: url(../images/hero-bg.jpg);
         height: 100px;
-        background-position: center;
+         background-position: center;
         background-size: cover;
         position: relative;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+}
+    
+    .hero h2 {
+        margin: 0 5px;
+        text-align: center;
+        font-weight: lighter;
+        padding: 5px 10px;
+        font-size: 1.55vw;
+        font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
+        color:rgb(145, 204, 205);
+        border-bottom: 4px solid;
     }
 /* END HERE STYLE */
 /* START RESUME CONTENT STYLE */
-
+    
 /* END RESUME CONTENT STYLE */
 /* STRAT FOOTER STYLE */
   footer {
