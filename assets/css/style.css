@@ -3,6 +3,7 @@
     --bg-color: rgb(237, 237, 246);
     --box-color: rgb(145, 204, 205);
     --p-text-color: rgb(80, 154, 155);
+    --side-h3-color: rgb(28, 33, 44);
 }
 
 * {
@@ -77,36 +78,54 @@ header nav ul li a:hover {
     position: relative;
 }
 /* SECTION STYLES START */
-.my-title {
-    width: 30%;
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+  }
+
+.my-title-flex {
     font-size: 50px;
-    padding: 0 5px 20px 100px;
-    margin: 25px 0px 15px 15px;
+    padding: 0 5px 20px 150px;
     font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
     color:#224380;
+    width: 30%;
 }
+.my-right-flex {
+    flex:2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 4px solid rgba(27, 57, 112, 0.302);
+    padding-left: 20px;
 
+}
 /* Start About-me style */
-.about-me {
-    margin: 0 auto 30px auto;
-    color:#224380;
-    overflow: auto;
+
+
+.my-title-flex h3 {
+    flex: 1 30%;
+    flex-wrap: wrap;
+    text-align: right;
+}
+/* Start About-me style */
+.about-me-info {
+
+    margin: 15px 5px 20px;
+    padding: 5px 50px;
+    float:right;
+    width: 65%;
+    border-left: 4px solid;
+    padding-left: 20px;
   }
-  .right-content {
-      margin: 15px 5px 20px;
-      padding: 5px 50px;
-      float:right;
-      width: 65%;
-      border-left: 4px solid;
-  }
-  .about-me p {
-            color: var(--p-text-color);
-            line-height: 1.5;
-            width: 80%;
-            margin: 0 auto;
-            font-size: 16px;
-            text-align: left;
-      
+
+.about-me p {
+     color: var(--p-text-color);
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 0 0 15px;
+    font-size: 16px;
+    text-align: left;  
   }
 
   /* end of about-me style */
@@ -129,11 +148,8 @@ header nav ul li a:hover {
   .right-content p {
       margin:  0 auto;
   }
-  .primary-border {
-    border-color: #fce138;
-  }
   
-  .secondary-border {
+  .right-border {
     border-color: #39a6b2;
   }
 
@@ -172,11 +188,15 @@ footer div {
     flex: 1;
 }
 .first-column {
+    padding: 10px 5px 5px 10px;
+    border: 4px solid var(--box-color);
     background-color:rgb(255, 0, 0) ;
     height: 100px;
 }
 
 .second-column {
+    padding: 10px 5px 5px 10px;
+    border: 4px solid var(--box-color);
     background-color:rgb(49, 0, 128) ;
     height: 100px;
 }
