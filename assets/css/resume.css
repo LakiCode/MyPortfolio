@@ -2,74 +2,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-
+      }
+    
     /* body */
     body {
-        background-color: rgb(237, 237, 246);
+        background-color: var(--bg-color);
         font-family: Arial, Helvetica, sans-serif;
     }
-
-    /* STRAT HEADER STYLE */
+    /** HEADER and MENU STYLE START **/
+    
     header {
+        display: flex;
+        justify-content: space-between;
         padding:  20px 30px;
         background-color: rgb(49, 52, 61);
+        flex-wrap: wrap;
     }
-
-    /** header h1 style **/
+    /**header h1 style */
     header h1 {
         font-weight: bold;
         font-size: 36px;
         font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
         color:#232626;
         margin: 0;
-        display: inline; 
     }
-
-    /** header links style **/
+    header span {
+        background-color: var(--box-color);
+        width: 50%;
+    }
+    /* header links style */
     header a {
         text-decoration: none;
     }
-
-    /* END HEADER STYLE */ 
-     /* STRAT NAV BAR STYLE */
+    
+    /* nav bar style */
     header nav {
-        float:right;
         margin: 7px 0;
     }
-
-    header nav ul li {
-        display: inline;
+    header nav ul, .contact-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+      
     }
-    
-    header nav ul li a {
+    header nav ul li a , .contact-nav ul li a {
         margin: 0 5px;
         font-weight: lighter;
         padding: 5px 10px;
-        font-size: 22px;
+        font-size: 1.55vw;
         font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
         color:rgb(145, 204, 205);
         border-bottom: 4px solid;
     }
-  /* END NAV BAR STYLE */  
-  /* STRAT HERE STYLE */
+    header nav ul li a:hover {
+        color: rgb(255, 0, 0);
+    }
+    /** start hero style **/
     .hero {
+        display: flex;
+        flex-wrap: wrap;
         background-image: url("../images/hero-bg.jpg");
         height: 100px;
         background-position: center;
         background-size: cover;
         position: relative;
-        text-align: center;
     }
-    .resume-title {
-        padding: 20px 20px 5px 20px;
-        font-weight: bold;
-        font-size: 32px;
-        font-family:'Times New Roman',Georgia, 'Times New Roman', Times, serif;
-        border-bottom: 4px solid;
-        color:rgb(145, 204, 205);
-        display: inline-block;
-      }
 /* END HERE STYLE */
 /* START RESUME CONTENT STYLE */
 
